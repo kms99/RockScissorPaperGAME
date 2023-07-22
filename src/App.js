@@ -49,7 +49,7 @@ function App() {
     <div className='main-container'>
       <div className='box-container'>
         <Box user="USER" choice={userChoice} result={result}/>
-        <Box user="COM" choice={comChoice} result={result=="tie"?"tie":result=="win"?"lose":"win"}/>
+        <Box user="COM" choice={comChoice} result={result}/>
       </div>
       <div>
         <button onClick={gameButtonClick} value={'scissors'}>가위</button>

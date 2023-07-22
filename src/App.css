@@ -14,13 +14,13 @@
   margin: 1em;
   height: 40vw;
 }
-.box-tie{
+.tie{
   border: 5px solid black;
 }
-.box-win{
+.win{
   border: 5px solid blue;
 }
-.box-lose{
+.lose{
   border: 5px solid red;
 }
 .box img{

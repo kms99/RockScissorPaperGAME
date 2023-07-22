@@ -1,11 +1,18 @@
 import React from 'react'
 
-const Box = (proms) => {
+const Box = (props) => {
+    let result;
+    if (props.user==="COM" && props.result!=="tie" && props.result!==""){
+        result = props.result ==="win" ? "lose":"win";
+    }else{
+        result = props.result;
+    }
+
   return (
-    <div className={`box ${proms.result=="tie"?'box-tie':proms.result=="win"?'box-win':'box-lose'}`}>
-        <h1>{proms.user}</h1>
-        <img src={proms.choice&&proms.choice.imgUrl}></img>
-        <h2>{proms.result}</h2>
+    <div className={`box ${result}`}>
+        <h1>{props.user}</h1>
+        <img src={props.choice&&props.choice.imgUrl}></img>
+        <h2>{result}</h2>
     </div>
   )
   
